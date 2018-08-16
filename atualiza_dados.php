@@ -26,6 +26,7 @@
 
 
 if($resultado_msg_contato= mysqli_query($conn, $result_msg_contato)){
+
 	 include_once('teste.php');
 }else{
 	echo "false";

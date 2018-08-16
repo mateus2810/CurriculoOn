@@ -99,7 +99,8 @@ CPF:
 
   <div>
     <div class="form-group">
-      <input type="text" class="form-control" id="formnome" name="cpf"  disabled value="<?php echo $cpf;  ?>"  placeholder="">
+      <input type="text" class="form-control" id="formnome"   disabled value="<?php echo $cpf;  ?>"  placeholder="">
+      <input type="hidden" name="cpf" value="<?php echo $cpf;  ?>">
     </div>
 
 Estado Civil: 
