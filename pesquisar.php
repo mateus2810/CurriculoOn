@@ -72,7 +72,7 @@
   	<div class="container">
   		  
 
- <form method="POST" action="salva_mensagem.php">
+
       
       
   <div class="form-group">
@@ -80,9 +80,15 @@
 <br>
 
    <br>
-   <center><h4>Dados Pessoais</h4></center> 
+   <center><h4>Editar - Dados Pessoais</h4></center> 
 
+
+<button class="btn btn-primary" onclick ="voltar()" >voltar</button>
+ <form method="POST" action="atualiza_dados.php">
+ <br>
+<br>
 Nome Completo:
+
 
   <div>
     <div class="form-group">
@@ -93,7 +99,7 @@ CPF:
 
   <div>
     <div class="form-group">
-      <input type="text" class="form-control" id="formnome" name="cpf" value="<?php echo $cpf;  ?>"  placeholder="">
+      <input type="text" class="form-control" id="formnome" name="cpf"  disabled value="<?php echo $cpf;  ?>"  placeholder="">
     </div>
 
 Estado Civil: 
@@ -184,97 +190,24 @@ Conclusão/Cursando:
                     <input type="text" class="form-control" id="formatividade" name="informacoes" placeholder="">
                   </div>
      
-<button type="submit" class="btn btn-primary" onclick ="mostrar()">Enviar</button>
+                  <button type="submit" class="btn btn-primary" >Enviar</button>
 
             </form>
           </div>
 
 <br>
 <br>
-Digite seu CPF para fazer a pesquisa:
 
-<form method="POST" action="pesquisar.php">
-  <div>
-    <div class="form-group">
-      <input type="text" class="form-control" id="formpesqusia"  name="cpf" placeholder="">
-    </div>
-<button type="submit" class="btn btn-primary" onclick ="">Pesquisar</button>
-</form>
 
   <script type="text/javascript">
     
-    
-    function mostrar(){
-      //Dados Pessoais
-      var nome = document.getElementById("formnome").value;
-      document.getElementById('demo').innerHTML = nome;
-
-      var civil = document.getElementById("formestado").value;
-      document.getElementById('estado').innerHTML = civil;
-
-      var nacionalidade = document.getElementById("formnacionalidade").value;
-      document.getElementById('nacionalidade').innerHTML = nacionalidade;
-
-      var idade = document.getElementById("formidade").value;
-      document.getElementById('idade').innerHTML = idade;
-
-      var sexo = document.getElementById("formsexo").value;
-      document.getElementById('sexo').innerHTML = sexo;
-
-      var endereco = document.getElementById("formendereco").value;
-      document.getElementById('endereco').innerHTML = endereco;
-
-      var cidade = document.getElementById("formcidade").value;
-      document.getElementById('cidade').innerHTML = cidade;
-
-          //Objetivo
-          var objetivo = document.getElementById("formobjetivo").value;
-          document.getElementById('objetivo').innerHTML = objetivo;
-
-              //Formação Academica
-              var curso = document.getElementById("formcurso").value;
-              document.getElementById('curso').innerHTML = curso;
-
-              var instituicao = document.getElementById("forminstituicao").value;
-              document.getElementById('instituicao').innerHTML = instituicao;
-
-              var concluido = document.getElementById("formconcluido").value;
-              document.getElementById('concluido').innerHTML = concluido;
-
-                    //Experiencias Profissionais
-                  var empresa = document.getElementById("formempresa").value;
-                  document.getElementById('empresa').innerHTML = empresa;
-
-                  var anoe = document.getElementById("formanoe").value;
-                  document.getElementById('anoe').innerHTML = anoe;
-
-                  var anos = document.getElementById("formanos").value;
-                  document.getElementById('anos').innerHTML = anos;
-
-                  var cargo = document.getElementById("formcargo").value;
-                  document.getElementById('cargo').innerHTML = cargo;
-
-                  var detalhe = document.getElementById("formdetalhe").value;
-                  document.getElementById('detalhe').innerHTML = detalhe;
-
-                      //Atividades Complementares
-                      var atividade = document.getElementById("formatividade").value;
-                      document.getElementById('atividade').innerHTML = atividade;
-
-
-
-      function topFunction() {
-
-    document.body.scrollBottom= 0;
-    document.documentElement.scrollBottom= 0;
-    window.scrollTo(300, 0);
-
-}
-
-
-      
-      //alert("Nome: "+nome +"\nEstado:"+ estado)
+    function voltar(){
+       window.location = "index.php";
     }
+
+
+            //alert("Nome: "+nome +"\nEstado:"+ estado)
+    
   </script>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
