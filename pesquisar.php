@@ -106,31 +106,31 @@ CPF:
 Estado Civil: 
   </div>
      <div class="form-group">
-    <input type="text" class="form-control" id="formestado" name="estado_civil" placeholder="">
+    <input type="text" class="form-control" id="formestado" name="estado_civil" value="<?php echo $estado_civil;  ?>" placeholder="">
   </div>
 
 Nacionalidade:
         <div class="form-group">
-            <input type="text" class="form-control" id="formnacionalidade" name="nacionalidade" placeholder="">
+            <input type="text" class="form-control" id="formnacionalidade" name="nacionalidade" value="<?php echo $nacionalidade;  ?>" placeholder="">
       </div>
 
 Idade:
         <div class="form-group">
-            <input type="text" class="form-control" id="formidade" name="idade" placeholder="">
+            <input type="text" class="form-control" id="formidade" name="idade" value="<?php echo $idade;  ?>" placeholder="">
         </div>
 Sexo:        
   <div class="form-group">
-    <input type="text" class="form-control" id="formsexo" name="sexo" placeholder="">
+    <input type="text" class="form-control" id="formsexo" name="sexo" value="<?php echo $sexo;  ?>"placeholder="">
   </div>
 
 Endereço:
   <div class="form-group">
-    <input type="text" class="form-control" id="formendereco" name="endereco" placeholder="">
+    <input type="text" class="form-control" id="formendereco" name="endereco" value="<?php echo $endereco;  ?>"placeholder="">
   </div>
 
 Cidade:
   <div class="form-group">
-    <input type="text" class="form-control" id="formcidade" name="cidade" placeholder="">
+    <input type="text" class="form-control" id="formcidade" name="cidade" value="<?php echo $cidade;  ?>" placeholder="">
   </div>
 
 
@@ -138,24 +138,24 @@ Cidade:
       <a href="file:///C:/Users/Mateus/Desktop/UFVJM/7%C2%BA%20Periodo/Engenharia%20Web/Trabalho%20Web/montagem.html" data-toggle="tooltip" title="Indicar qual o cargo ou tarefa específica que quer executar. Propósito em torno do seu currículo"><img src="ponto.png">Saiba mais!</a>
 
       <div class="form-group">
-        <input type="text" class="form-control" id="formobjetivo"name="objetivo" placeholder="">
+        <input type="text" class="form-control" id="formobjetivo"name="objetivo" value="<?php echo $objetivo;  ?>"placeholder="">
       </div>
 
   <label for="formGroupExampleInput"><strong>Formação Academica</strong></label>
   <br>
   Curso:
   <div class="form-group">
-    <input type="text" class="form-control" id="formcurso" name="curso" placeholder="">
+    <input type="text" class="form-control" id="formcurso" name="curso" value="<?php echo $curso;  ?>"placeholder="">
   </div>
 
 Instituição:
       <div class="form-group">
-        <input type="text" class="form-control" id="forminstituicao" name="instituicao"placeholder="">
+        <input type="text" class="form-control" id="forminstituicao" name="instituicao" value="<?php echo $instituicao;  ?>" placeholder="">
       </div>
   
 Conclusão/Cursando:
     <div class="form-group">
-      <input type="text" class="form-control" id="formconcluido" name="conclusao" placeholder="">
+      <input type="text" class="form-control" id="formconcluido" name="conclusao" value="<?php echo $conclusao;  ?>" placeholder="">
     </div>
 
     <label for="formGroupExampleInput"><strong>Qualificações e Atividades Complementares</strong></label>
@@ -165,30 +165,30 @@ Conclusão/Cursando:
 <br>
 
                 <div class="form-group">
-                  <input type="text" class="form-control" id="formempresa" name="qual1" placeholder="1ª Qualifição ">
+                  <input type="text" class="form-control" id="formempresa" name="qual1" value="<?php echo $qual1;  ?>" placeholder="1ª Qualifição ">
                 </div>
 
                 <div class="form-group">
-                  <input type="text" class="form-control" id="formanoe" name="qual2" placeholder="2ª Qualifição">
+                  <input type="text" class="form-control" id="formanoe" name="qual2" value="<?php echo $qual2;  ?>" placeholder="2ª Qualifição">
                 </div>
    
                 <div class="form-group">
-                  <input type="text" class="form-control" id="formanos" name="qual3"placeholder="3ª Qualifição">
+                  <input type="text" class="form-control" id="formanos" name="qual3" value="<?php echo $qual3;  ?>" placeholder="3ª Qualifição">
                 </div>
 
                 <div class="form-group">
-                  <input type="text" class="form-control" id="formcargo" name="qual4"placeholder="4ª Qualifição">
+                  <input type="text" class="form-control" id="formcargo" name="qual4" value="<?php echo $qual4;  ?>" placeholder="4ª Qualifição">
                 </div>
 
                 <div class="form-group">
-                  <input type="text" class="form-control" id="formdetalhe" name="qual5"placeholder="5ª Qualifição">
+                  <input type="text" class="form-control" id="formdetalhe" name="qual5" value="<?php echo $qual5;  ?>" placeholder="5ª Qualifição">
                 </div>
     
     <label for="formGroupExampleInput"><strong>Informações Adicionais</strong></label>
     <a href="#" data-toggle="tooltip" title="Você deve utilizá-la para inserir informações relevantes para a vaga a que está concorrendo, mas que não se encaixam nos campos anteriores. Utilize esta sessão com moderação focando aspectos que possam enriquecer seu currículo."><img src="ponto.png"></a>
 
                   <div class="form-group">
-                    <input type="text" class="form-control" id="formatividade" name="informacoes" placeholder="">
+                    <input type="text" class="form-control" id="formatividade" name="informacoes" value="<?php echo $informacao;  ?>" placeholder="">
                   </div>
      
                   <button type="submit" class="btn btn-primary" >Enviar</button>
