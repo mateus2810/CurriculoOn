@@ -41,23 +41,15 @@ sudo /opt/lampp/lampp start
 ```
 http://localhost/phpmyadmin
 ``` 
-2. Crie uma nova base de dados com o nome "bancoweb" e importe o sql da pasta "/opt/lampp/htdocs/CurriculoOn/BD/bd.sql". Conforme demonstra na imagem
-![alt text](http://curriculoOn/CurriculoOn/BD/criacaoBanco.png)
+2. Crie uma nova base de dados com o nome "bancoweb". Conforme demonstra na imagem
 
+![alt text](https://github.com/mateus2810/CurriculoOn/blob/master/BD/criacaoBanco.png)
 
-CONFIGURANDO BD
+3. Importe o sql da pasta "/opt/lampp/htdocs/CurriculoOn/BD/bd.sql".
 
-/
-Crie um novo banco de dados com o nome "bancoweb" e importe o sql da pasta "/opt/lampp/htdocs/CurriculoOn/BD/bd.sql"
+![alt text](https://github.com/mateus2810/CurriculoOn/blob/master/BD/importandoDados.png)
 
+## INICIANDO A APLICAÇÃO
 
 Entre em http://localhost/CurriculoOn/ e sua aplicação já vai esta funcionando!
 
-
-
-
-
-
-INICIALIZANDO PROJETO PELO XAMPP, irá statar bd e apache
-
-    sudo /opt/lampp/xampp start
